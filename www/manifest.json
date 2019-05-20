@@ -1,0 +1,28 @@
+{
+  "name": "Lorem Ipsum",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": [ "background.js" ]
+    }
+  },
+  "icons": {
+    "16": "res/icon/chrome/0016.png",
+    "128": "res/icon/chrome/0128.png"
+  },
+  "permissions": [
+    "storage",
+    "webRequest",
+    "*://*.domain.com/",
+    "*://*.otherdomain.com/"
+  ],
+  "file_handlers": {
+    "text": {
+      "types": [
+        "text/*"
+      ]
+    }
+  }
+}
